@@ -25,7 +25,7 @@ body {
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: 500;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 .action {
@@ -42,4 +42,54 @@ body {
 .action__item:hover {
 	cursor: pointer;
 	box-shadow: rgba(117, 156, 255, 0.5) 0px 5px 20px;
+}
+
+.action__item.user-active {
+	box-shadow: rgba(117, 156, 255, 0.5) 0px 5px 20px;
+}
+
+.action__item.random-active {
+	box-shadow: rgba(255, 97, 213, 0.5) 0px 5px 20px;
+}
+
+.result {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.result__text {
+	font-size: 25px;
+}
+
+.result__text--success {
+	color: green;
+}
+
+.result__text--info {
+	color: blue;
+}
+
+.result__text--danger {
+	color: red;
+}
+
+.btn-reset {
+	margin-top: 100px;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+
+	height: 35px;
+	min-width: 150px;
+	font-size: 16px;
+
+	transition: background-color 0.3s linear;
+	will-change: background-color;
+}
+
+.btn-reset:hover {
+	cursor: pointer;
+	background-color: #81ff70;
 }
